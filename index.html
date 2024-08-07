@@ -59,6 +59,10 @@ src="https://td.doubleclick.net/td/rul/798789419?random=1722864774084&amp;cv=11&
         transform: translate(150px,0px);
         transition: all 0.5s;
     }
+    .icons:hover
+    {
+        transform: translate(0px,0px);
+    }
     .icons a:hover
     {
         transform: translate(0px,0px);
@@ -81,10 +85,7 @@ src="https://td.doubleclick.net/td/rul/798789419?random=1722864774084&amp;cv=11&
     {
         color: #0077b5;
     }
-    .icons a i.fa-twitter
-    {
-        color: #00acee;
-    }
+
     .icons a i.fa-hackerrank
     {
         color: #00FF00;
@@ -104,11 +105,6 @@ src="https://td.doubleclick.net/td/rul/798789419?random=1722864774084&amp;cv=11&
     .LinkedIn
     {
         background-color:#0077b5;
-        color:white;
-    }
-    .Twitter
-    {
-        background-color:#00acee;
         color:white;
     }
     .Hackerank
@@ -133,12 +129,9 @@ src="https://td.doubleclick.net/td/rul/798789419?random=1722864774084&amp;cv=11&
     }
 
 
-    <!-- Aboutpage-->
 
-    img {
-        max-width: 10%;
-        height: auto;
-        }
+
+
 .social-icon {
     display: inline-flex;
     align-items: center;
@@ -183,21 +176,131 @@ src="https://td.doubleclick.net/td/rul/798789419?random=1722864774084&amp;cv=11&
           }
           .icons {
     display: flex;
-    gap: 10px;
+    gap: 9px;
   }
+
+  /* Base styles */
+  .custom-heading {
+      font-size: 2rem; /* Default font size for heading */
+      text-align: center;
+      margin: 0;
+  }
+
+  .custom-paragraph {
+      font-size: 1rem; /* Default font size for paragraphs */
+      text-align: center;
+      margin: 0;
+  }
+
+  /* Responsive font sizes */
+  .p-large {
+      font-size: 1.2rem; /* Adjust as needed for larger paragraphs */
+  }
+
+  .p-small {
+      font-size: 0.9rem; /* Adjust as needed for smaller paragraphs */
+  }
+
+  /* Media Queries */
+  @media (max-width: 1200px) {
+      .custom-heading {
+          font-size: 1.2rem;
+      }
+
+      .p-large {
+          font-size: 1rem;
+      }
+
+      .p-small {
+          font-size: 0.85rem;
+      }
+  }
+
+  @media (max-width: 992px) {
+      .custom-heading {
+          font-size: 1.2rem;
+      }
+
+      .p-large {
+          font-size: 0.8rem;
+      }
+
+      .p-small {
+          font-size: 0.8rem;
+      }
+  }
+
+  @media (max-width: 768px) {
+      .custom-heading {
+          font-size: 1.2rem;
+      }
+
+      .p-large {
+          font-size: 0.7rem;
+      }
+
+      .p-small {
+          font-size: 0.75rem;
+      }
+  }
+
+  @media (max-width: 576px) {
+      .custom-heading {
+          font-size: 1.2rem;
+      }
+
+      .p-large {
+          font-size: 0.7rem;
+      }
+
+      .p-small {
+          font-size: 0.7rem;
+      }
+  }
+  @media (max-width: 800px) {
+      .custom-heading {
+          font-size: 1rem;
+      }
+
+      .p-large {
+          font-size: 0.7rem;
+      }
+
+      .p-small {
+          font-size: 0.7rem;
+      }
+  }
+
+  /* Flexbox alignment for container */
+  .flex-shrink-0 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center-align items horizontally */
+      justify-content: center; /* Center-align items vertically */
+      padding: 12px; /* Adjust padding as needed */
+      box-sizing: border-box; /* Ensure padding does not affect width */
+  }
+
+  /* Optional: Adjust container width for better mobile fit */
+  @media (max-width: 576px) {
+      .flex-shrink-0 {
+          width: 80%; /* Adjust width to fit mobile screens better */
+      }
+  }
+
 
     </style>
   </head>
 <body class="" style="" id="home">
     <div class="portfolio-banner-section" style=" background-color: #0d0347 ; background-size: cover;">
       <div class="icons">
-          <a href="https://www.linkedin.com/in/nallalamohana/" class="LinkedIn"><i class="fa-brands fa-linkedin fa-beat"></i><b> LinkedIn </b></a>
-          <a href="https://github.com/NallalaMohana" class="Github"><i class="fa-brands fa-github fa-beat"></i> <b>Github </b></a>
-          <a href="https://www.hackerrank.com/profile/nallalamohanala1" class="Hackerank"><i class="fa-brands fa-hackerrank fa-beat"></i><b> Hackerank </b></a>
-          <a href="https://leetcode.com/u/NallalaMohana/" class="Leetcode"><i class="fa-solid fa-code fa-beat"></i> <b>Leetcode </b></a>
+          <a href="https://www.linkedin.com/in/nallalamohana/" class="LinkedIn"><i class="fa-brands fa-linkedin fa-beat"></i><b>LinkedIn </b></a>
+          <a href="https://github.com/NallalaMohana" class="Github"><i class="fa-brands fa-github fa-beat"></i><b>Github </b></a>
+          <a href="https://www.hackerrank.com/profile/nallalamohanala1" class="Hackerank"><i class="fa-brands fa-hackerrank fa-beat"></i><b>Hackerank </b></a>
+          <a href="https://leetcode.com/u/NallalaMohana/" class="Leetcode"><i class="fa-solid fa-code fa-beat"></i><b>Leetcode </b></a>
           <a href="https://www.geeksforgeeks.org/user/nallalamoha7eow/" class="GFG"><i class="fa fa-gg-circle fa-beat"></i><b>GFG</b></a>
       </div>
-        <div class="port-menu d-flex flex-column gap-1" >
+        <div class="port-menu" style="display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; position: fixed; left: 0; top: 15rem; padding: 1rem; border-radius:50rem;">
             <a href="#home" class="menu-bt">
                 <div class="d-flex align-items-center">
                     <div class="icon">
@@ -281,7 +384,7 @@ src="https://td.doubleclick.net/td/rul/798789419?random=1722864774084&amp;cv=11&
                 <div class="col-12">
                     <div class="statics-info">
                       <div class="bg-white shadow rounded-pill" style="background-color: #d58f9a ; border-radius:50px">
-  <div class="d-block d-md-flex align-items-center g-1 g-3 justify-content-around px-16 px-lg-34 py-16 py-lg-24" style="background-color: #ecdde6  ; border-radius:50px;">
+  <div class="d-block d-md-flex align-items-center g-1 g-3 justify-content-around px-16 px-lg-34 py-16 py-lg-24" style="background-color: #ecdde6  ; border-radius:30px;">
       <div class="d-flex align-items-center mb-md-0 mb-16">
           <div class="flex-md-grow-1 me-lg-10 me-10 mb-md-10 mb-lg-0">
               <div>
@@ -291,15 +394,15 @@ src="https://td.doubleclick.net/td/rul/798789419?random=1722864774084&amp;cv=11&
           <div class="flex-shrink-0">
     <h2 class="custom-heading"><b>Sagi Ramakrishnam Raju Engineering College</b></h2>
     <div class="paragraph-container">
-            <p class="custom-paragraph p-large">
-                Computer Science and Engineering (CSE)
-            </p>
-            <p class="custom-paragraph p-small">
-                                     <span></span>Expected graduation: 2025
-            </p>
-        </div>
-
+        <p class="custom-paragraph p-large">
+            Computer Science and Engineering (CSE)
+        </p>
+        <p class="custom-paragraph p-small">
+            Expected graduation: 2025
+        </p>
+    </div>
 </div>
+
 
       </div>
   </div>
@@ -501,8 +604,8 @@ structure explanations for immersive learning.</p>
                         <div class="col-12 col-md-4 mb-24">
                             <div class="d-block text-center">
 
-                                <a href="D:\21B91A05L0\Resume\MyPortfolio\images\MERN_Stack.jpeg" class="cert_view view-certificate" data-image="D:\21B91A05L0\Resume\MyPortfolio\images\MERN_Stack.jpeg" data-title="MERN Stack Intern Certificate">
-                                    <img class="img-fluid rounded-16" src="D:\21B91A05L0\Resume\MyPortfolio\images\MERN_Stack.jpeg" alt="CB Cert">
+                                <a href="https://github.com/NallalaMohana/Portfolio/blob/main/images/MERN_Stack.jpeg?raw=true" class="cert_view view-certificate" data-image="https://github.com/NallalaMohana/Portfolio/blob/main/images/MERN_Stack.jpeg?raw=true" data-title="MERN Stack Intern Certificate">
+                                    <img class="img-fluid rounded-16" src="https://github.com/NallalaMohana/Portfolio/blob/main/images/MERN_Stack.jpeg?raw=true" alt="MERN Cert">
                                 </a>
 
                                 <p class="mt-10">
